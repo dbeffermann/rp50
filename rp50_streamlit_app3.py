@@ -300,7 +300,7 @@ with tab_assistant:
         img_url = nz(row.get("Artist Image URL", "")).strip()
         if not valid_url(img_url):
             img_url = "https://placekitten.com/800/1100"
-        st.image(img_url, use_column_width=True, caption="Artista")
+        st.image(img_url, use_container_width=True, caption="Artista")
 
     style_text = nz(row.get("Artist Style", ""))
     if not style_text:
